@@ -1,6 +1,7 @@
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
+const fechas = require('fechas-bitacora-cristoval-payarez');
 
 const directorioProyecto = path.join(__dirname, '..');
 const directorioDatos = path.join(directorioProyecto, 'data');
@@ -67,7 +68,7 @@ function exportarNotas(notas, destinoIndicado) {
   fs.mkdirSync(directorioSalida, { recursive: true });
   const archivoTemporal = path.join(directorioSalida, 'exportacion.txt');
   const contenido = notas.map((nota) => (
-    `[${nota.id}] (${nota.etiqueta}) ${new Date(nota.fecha).toLocaleString('es-ES')} — ${nota.texto}`
+    `[${nota.id}] (${nota.etiqueta}) ${fechas.getLongTime('es-ES', nota.fecha)} — ${nota.texto}`
   )).join('\n');
   fs.writeFileSync(archivoTemporal, `${contenido}${contenido ? '\n' : ''}`, 'utf8');
 
