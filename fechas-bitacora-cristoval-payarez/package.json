@@ -1,0 +1,14 @@
+{
+  "name": "fechas-bitacora-cristoval-payarez",
+  "version": "1.0.0",
+  "description": "Funciones de fecha para la aplicación bitacora-cli",
+  "main": "src/index.js",
+  "keywords": [
+    "fechas",
+    "fecha",
+    "bitacora",
+    "utilidades"
+  ],
+  "author": "cristoval payarez",
+  "license": "MIT"
+}

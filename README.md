@@ -4,12 +4,12 @@ Aplicación de consola para guardar lo que aprendes cada día. Guarda las notas 
 
 ## Instalación
 
-Requiere Node.js 20.12 o superior y npm. En este taller, el paquete `fechas-bitacora-cristoval-payarez` se prueba enlazándolo desde la carpeta hermana del paquete:
+Requiere Node.js 20.12 o superior y npm. El repositorio incluye el paquete local de fechas:
 
 ```sh
-cd ../fechas-bitacora-cristoval-payarez
+cd fechas-bitacora-cristoval-payarez
 npm link
-cd ../bitacora-cli
+cd ..
 npm link fechas-bitacora-cristoval-payarez
 npm install
 npm start -- ayuda

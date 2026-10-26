@@ -16,7 +16,7 @@
     "start": "node src/index.js"
   },
   "dependencies": {
-    "fechas-bitacora-cristoval-payarez": "^1.0.0",
+    "fechas-bitacora-cristoval-payarez": "file:./fechas-bitacora-cristoval-payarez",
     "object-hash": "^3.0.0"
   }
 }
