@@ -28,7 +28,7 @@ function leerNotas() {
     return notas;
   } catch (error) {
     if (error instanceof SyntaxError) {
-      throw new Error(`El archivo de notas está dañado: ${error.message}`);
+      throw new Error(`El archivo de notas está dañado: el formato JSON no es válido.`);
     }
     throw error;
   }
