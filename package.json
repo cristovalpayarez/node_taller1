@@ -1,0 +1,22 @@
+{
+  "name": "bitacora-cli",
+  "version": "1.0.0",
+  "description": "Bitacora personal de aprendizaje desde la terminal",
+  "keywords": [
+    "bitacora",
+    "nota",
+    "node",
+    "terminal"
+  ],
+  "license": "MIT",
+  "author": "cristoval payarez",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "fechas-bitacora-cristoval-payarez": "^1.0.0",
+    "object-hash": "^3.0.0"
+  }
+}
